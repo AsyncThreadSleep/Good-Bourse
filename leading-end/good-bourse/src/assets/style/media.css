@@ -1,9 +1,47 @@
 @media screen and (min-width: 576px) {
-    :root {}
+    :root {
+        /*网页宽度*/
+        --body-width: 100vw;
+        /*网页高度*/
+        --body-height: 100vh;
+        /*网页最小宽度*/
+        --body-minWidth: 576px;
+        /*网页背景*/
+        --body-color: rgb(255, 255, 255);
+        /*登录卡片宽度*/
+        --loginCard-width: 570px;
+        /*登录卡片高度*/
+        --loginCard-height: 450px;
+        /*登录卡片左边区域宽度*/
+        --loginCard-left-width: 225px;
+        /*登录卡片右边区域宽度*/
+        --loginCard-right-width: 300px;
+        /*登录卡片颜色*/
+        --loginCard-color: #8083ff;
+    }
 }
 
 @media screen and (min-width: 768px) {
-    :root {}
+    :root {
+        /*网页宽度*/
+        --body-width: 100vw;
+        /*网页高度*/
+        --body-height: 100vh;
+        /*网页最小宽度*/
+        --body-minWidth: 768px;
+        /*网页背景*/
+        --body-color: rgb(255, 255, 255);
+        /*登录卡片宽度*/
+        --loginCard-width: 750px;
+        /*登录卡片高度*/
+        --loginCard-height: 450px;
+        /*登录卡片左边区域宽度*/
+        --loginCard-left-width: 350px;
+        /*登录卡片右边区域宽度*/
+        --loginCard-right-width: 350px;
+        /*登录卡片颜色*/
+        --loginCard-color: #8083ff;
+    }
 }
 
 @media screen and (min-width: 992px) {

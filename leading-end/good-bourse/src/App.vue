@@ -42,16 +42,16 @@ export default {
 }
 
 .loginCard {
-  width: var(--loginCard-width);
-  height: var(--loginCard-height);
+  width: calc(var(--loginCard-width) - 40px);
+  height: calc(var(--loginCard-height) - 40px);
   background-color: var(--loginCard-color);
   border-radius: 24px;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   text-align: center;
+  justify-content: space-between;
 }
 
 .loginCard-left,
@@ -80,11 +80,12 @@ export default {
 }
 
 .login-input {
-  width: 95%;
+  width: calc(95% - 26px);
   padding: 8px 12px;
   border: 1px solid #c6c6c6;
   margin: 10px 0 10px 0;
   line-height: 50px;
+  height:32px;
 }
 
 .login-input:focus {
@@ -99,6 +100,7 @@ export default {
 .button-submit {
   margin-top:20px;
   width: 95%;
+  height:50px;
   border: 0;
   color: white;
   background-color: #474554;
@@ -107,8 +109,6 @@ export default {
 
 .login-input,
 .button-submit {
-  height: 50px;
-  box-sizing: border-box;
   font-size: 20px;
   border-radius: 10px;
   font-weight: 600;
