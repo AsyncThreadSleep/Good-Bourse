@@ -1,21 +1,22 @@
 <template>
-  <div id="HtmlBody">
-    <div class="login-card">
-      <div class="card-left">
-        <h1 class="card-title">Good 交易所</h1>
+  <div id="viewport">
+    <div class="loginCard">
+      <div class="loginCard-left">
+        <h1 class="loginCard-title">Good&nbsp;交易所</h1>
       </div>
-      <div class="card-right">
-        <h1 class="card-title">用户登录</h1>
-        <form action="#" method="post">
+      <div class="loginCard-right">
+        <h1 class="loginCard-title">用户登录</h1>
+        <form action="#" method="post" class="loginCard-form">
           <div class="inputs">
             <input type="text" class="login-input account" placeholder="&nbsp;账号">
             <br />
             <input type="password" class="login-input password" placeholder="&nbsp;密码">
           </div>
-          <div class="buttons">
-            <button type="button" class="button-submit">我是卖家</button>
-            <button type="submit" class="button-submit">登录</button>
+          <div class="loginCard-a">
+            <a href="#">我是卖家</a>
+            <a href="#">忘记密码</a>
           </div>
+          <button type="submit" class="button-submit">登录</button>
         </form>
       </div>
     </div>
@@ -31,19 +32,19 @@ export default {
 </script>
 
 <style scoped>
-#HtmlBody {
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
+/* 视口 */
+#viewport {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.login-card {
-  width: 700px;
-  height: 450px;
-  background-color: #8083ff;
+.loginCard {
+  width: var(--loginCard-width);
+  height: var(--loginCard-height);
+  background-color: var(--loginCard-color);
   border-radius: 24px;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -53,32 +54,34 @@ export default {
   text-align: center;
 }
 
-.card-title {
+.loginCard-left,
+.loginCard-right {
+  height: 100%;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.loginCard-left {
+  width: var(--loginCard-left-width);
+}
+
+.loginCard-right {
+  width: var(--loginCard-right-width);
+}
+
+.loginCard-title {
   color: white;
   display: block;
 }
 
-.card-left {
-  width: 250px;
-  margin-top: 20px;
-}
-
-.card-right {
-  width: 410px;
-  margin-top: 20px;
-}
-
-.inputs{
-  margin-top: 40px;
-}
-
-.buttons{
-  margin-top: 30px;
+.loginCard-form {
+  width: 100%;
+  margin-top: 25px;
 }
 
 .login-input {
   width: 95%;
-  padding: 10px 20px;
+  padding: 8px 12px;
   border: 1px solid #c6c6c6;
   margin: 10px 0 10px 0;
   line-height: 50px;
@@ -88,12 +91,17 @@ export default {
   outline: 2px solid #00754b;
 }
 
+.loginCard-a{
+  display:flex;
+  justify-content: space-between;
+}
+
 .button-submit {
-  width: 40%;
+  margin-top:20px;
+  width: 95%;
   border: 0;
   color: white;
   background-color: #474554;
-  margin: 0 15px;
   cursor: pointer;
 }
 

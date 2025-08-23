@@ -6,5 +6,10 @@ module.exports = defineConfig({
       args[0].title = 'Good 交易所'
       return args
     })
+  },
+  devServer: {
+    port: 8003,
+    host: "0.0.0.0",
+    allowedHosts: 'all'
   }
 })

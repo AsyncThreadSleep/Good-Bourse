@@ -1,0 +1,36 @@
+:root {
+    /*网页宽度*/
+    --body-width: 100vw;
+    /*网页高度*/
+    --body-height: 100vh;
+    /*网页最小宽度*/
+    --body-minWidth: 320px;
+    /*网页背景*/
+    --body-color: rgb(255, 255, 255);
+    /*登录卡片宽度*/
+    --loginCard-width: 300px;
+    /*登录卡片高度*/
+    --loginCard-height: 450px;
+    /*登录卡片左边区域宽度*/
+    --loginCard-left-width: 0;
+    /*登录卡片右边区域宽度*/
+    --loginCard-right-width: 100%;
+    /*登录卡片颜色*/
+    --loginCard-color: #8083ff;
+}
+
+body {
+    width: var(--body-width);
+    height: var(--body-height);
+    min-width: var(--body-minWidth);
+    background-color: var(--body-color);
+}
+
+#app{
+    width: 100%;
+    height: 100%;
+}
+
+.abc{
+    
+}
