@@ -3,6 +3,18 @@
     <div class="loginCard">
       <div class="loginCard-left">
         <h1 class="loginCard-title">Good&nbsp;交易所</h1>
+        <p class="loginCard-text">
+          <span>本站仅供学习使用</span>
+          <br/>
+          <span>
+            项目地址:
+            <a :href="api.github">点击前往</a>
+          </span>
+          <br/>
+          <span>
+            作者:AsyncThreadSleep
+          </span>
+        </p>
       </div>
       <div class="loginCard-right">
         <h1 class="loginCard-title">用户登录</h1>
@@ -25,9 +37,14 @@
 
 <script>
 // import store from './store';
+import api from '@/assets/config/api.json';
 
 export default {
-
+  data(){
+    return{
+      api:api
+    }
+  }
 }
 </script>
 
@@ -72,6 +89,13 @@ export default {
 .loginCard-title {
   color: white;
   display: block;
+}
+
+.loginCard-text{
+  width:100%;
+  height:360px;
+  padding-top:50px;
+  line-height:50px;
 }
 
 .loginCard-form {

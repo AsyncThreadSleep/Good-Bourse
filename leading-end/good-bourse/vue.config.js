@@ -8,7 +8,7 @@ module.exports = defineConfig({
     })
   },
   devServer: {
-    port: 8003,
+    port: 9999,
     host: "0.0.0.0",
     allowedHosts: 'all'
   }
