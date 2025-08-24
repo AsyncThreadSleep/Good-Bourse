@@ -1,0 +1,12 @@
+@media screen and (min-width: 576px) {
+    :root {
+        /*网页最小宽度*/
+        --body-minWidth: 576px;
+        /*登录卡片宽度*/
+        --loginCard-width: 570px;
+        /*登录卡片左边区域宽度*/
+        --loginCard-left-width: 225px;
+        /*登录卡片右边区域宽度*/
+        --loginCard-right-width: 300px;
+    }
+}

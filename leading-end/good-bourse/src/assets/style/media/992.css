@@ -1,0 +1,6 @@
+@media screen and (min-width: 992px) {
+    :root {
+        /*网页最小宽度*/
+        --body-minWidth: 992px;
+    }
+}
